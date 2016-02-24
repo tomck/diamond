@@ -15,7 +15,7 @@ Users of **Mac OS X** and some **old Linux systems** need to compile the softwar
 
 Basic command line use
 ======================
-We assume to have a protein database file in FASTA format named ``nr.faa`` and a file of DNA reads that we want to align named ``reads.fna``.
+We assume to have a protein database file in FASTA format named ``nr.faa`` and a file of DNA reads that we want to align named ``reads.fna``. If one does not have a protein database file, and would like to use the ``nr`` database from BLAST, the command ``blastdbcmd -entry all -db nr > nr.faa`` may be helpful.
 
 In order to set up a reference database for DIAMOND, the ``makedb`` command needs to be executed with the following command line::
 
