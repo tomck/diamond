@@ -95,7 +95,7 @@ int main(int ac, const char* av[])
 #endif
         	("matrix", po::value<string>(&program_options::matrix)->default_value("blosum62"), "score matrix for protein alignment")
         	("seg", po::value<string>(&program_options::seg), "enable SEG masking of queries (yes/no)");
-			//("salltitles", "print all subject titles into the blast tabular format");
+		("salltitles", po::value<string>(&program_options::salltitles), "print all subject titles into the blast tabular format");
         	//("very-sensitive", "enable very sensitive mode (default: fast)");
 
         po::options_description advanced("Advanced options (0=auto)");
